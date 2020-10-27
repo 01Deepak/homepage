@@ -1,0 +1,721 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+
+    <!--**********************************88Style slide**********************-->
+  <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.deepakslides {display: none;}
+img {vertical-align: middle;}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.deepaktext {
+    z-index: 5;
+    min-width: 500px;
+    max-width: 500px;
+    white-space: normal;
+    font-size: 37px;
+    line-height: 44px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0px;
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    min-height: 0px;
+    max-height: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+}
+</style>
+<!--**********************************88Style slide**********************-->
+
+
+
+
+
+
+<style>
+    /*------------8th content------------------*/
+    .textabs
+{
+width:40%;
+background-color:white;
+position:absolute;
+top:40%;
+left:-5%;
+
+}
+.maptextabs
+{
+width:30%;
+background-color:white;
+position:absolute;
+top:3%;
+left:30%;
+
+}
+.lightbackground
+{
+    background-color:rgb(230, 230, 230);
+    }
+
+    /*------------- card --------------*/
+    .deepakcard
+    {
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+        transition:.3s;
+        width:100%;
+        padding:5px 5px 5px 5px;
+       
+        }
+        .deepakcard:hover
+        {
+            box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+      .p
+      {
+          padding:5px 5px;
+          }
+    /*------------- --------------*/
+     .deepakcard1
+    {
+        box-shadow:10px 10px 10px 10px rgba(0,0,0,0.2);
+       
+        padding:5px 5px 5px 5px;
+       
+        }
+    
+    *
+    {
+        box-sizing:border-box;
+        }
+        
+        .deepakbox
+        {
+            z-index:5;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+            }
+            .deepakpadding
+            {
+                padding:5px 5px 5px 5px;
+                margin:5px 0px 5px 0px;
+                
+                
+                }
+    .row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  margin-bottom:0px;
+}
+    
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/*------------------form css--------------*/
+input[type=text],[type=email],textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+
+  /*--------------------------------*/
+
+</style>
+</head>
+<body>
+
+<!--****************************Slider & menu ******************************-->
+   <div class="row">
+   <div class="col-12">
+   
+   <img class="deepakslides fade" src="image/slider1.jpg" alt="slider1" style="height:100%;width:100%;"/>
+   </div>
+   
+   <img class="deepakslides fade" src="image/slider2.jpg" alt="slider2" style="height:100%;width:100%;"/>
+   <img class="deepakslides fade" src="image/slider3.jpg" alt="slider3" style="height:100%;width:100%;"/>
+   <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+  
+   
+   </div>
+
+
+<!--************************** slider********************************-->
+    
+    <!--**************************************1st content************************-->
+    <div class="row">
+    <div class="col-4" style="padding-top:8%;"><!--left column-->
+    <p>Some of the investment services we offer</p>
+    <p>Over 30 high quality professionally designed pre-built website concepts to choose from. Build your website using a fully visual interface, using our revolutionary page & header builder.</p>
+    <input style="background-color:Green;" type="button" value="VIEW MORE" />
+    
+    </div>
+    <div class="col-8"><!--right column-->
+
+    <div class="row""><!-- in right column first row-->
+    <div class="col-6">
+    <div class="deepakcard">
+    <img src="image/icon1.png" alt="icon" /><br /><br />
+    <strong>Equity Markets</strong>
+    <p>Invest and Trade in copanies you believe in directly</p>
+    </div>
+    
+    </div>
+      
+    <div class="col-6">
+    <div class="deepakcard">
+    <img src="image/icon2.png" alt="icon2" /><br /><br />
+    <strong>Insurance </strong>
+    <p>Tax savings coupled with insurance for the risk averse</p>
+    </div>
+    
+
+    </div>
+    
+    </div>
+    <div class="row "><!-- in right column second row-->
+    <div class="col-6">
+
+    <div class="deepakcard">
+    <img src="image/icon3.png" alt="icon3" /><br /><br />
+    <strong>Mutual Funds</strong>
+    <p>Let the experts handle the work of making you rich</p>
+    </div>
+
+    </div>
+      
+    <div class="col-6">
+
+
+   <div class="deepakcard">
+    <img src="image/icon4.png" alt="icon4" /><br /><br />
+    <strong>Fixed Deposits</strong>
+    <p>Your money is safe and sound and you ger guaranteed returns</p>
+    </div>
+
+    </div>
+    
+    </div>
+    
+    </div>
+    </div>
+    
+
+    <!--************************************** 2nd content************************-->
+    <div class="row">
+
+    <div class="col-3">
+    <div class="deepakcard">   <!------------- first card -------------->
+     
+     <img src="image/card1.jpg" alt="card1" style="width:100%"/>
+    <div>
+    <h2>I want to borrow some money</h2>
+    <a href="#"><strong>Learn More ></strong></a>
+    </div>
+
+    </div>                    
+
+
+    </div>
+
+    <div class="col-3">
+     <div class="deepakcard p">   <!------------- second card -------------->
+     
+     <img src="image/card2.jpg" alt="card1" style="width:100%"/>
+    <div class="p">
+    <h2>I want to invest some money</h2>
+    <a href="#"><strong>Learn More ></strong></a> 
+    </div>
+
+    </div>          
+    </div>
+
+    <div class="col-6">
+    <div class="p" style="padding:8%">
+     <h2>Its time to make your money work for you</h2>
+    <p><strong>Over 30 high quality professionally designed pre-built website concepts to choose from. 
+    Build your website using a fully visual interface, using our revolutionary page & header builder.</strong></p>
+    <input type="button" value="VIEW MORE" />
+    </div>
+   
+    </div>
+
+    </div>
+    <!--************************************** 3rd content************************-->
+    <div class="row" style="background-color:rgb(250,250,250);">
+    
+    <div class="col-6">
+    <div style="text-align:center; padding:50% 2% 2% 2%;">
+    <h1>A big part of financial freedom is having your heart and mind free from worry about the what-ifs of life.</h1>
+    <h6>Tony Stark,</h6>
+    <strong>STARK INDUSTRIES</strong>
+    </div>
+    </div>
+
+    <div class="col-6">
+    <img src="image/3rdcontent.jpg" alt="thirdcontentimage" style="width:100%;z-index:25;"/>
+    </div>
+
+    </div>
+
+    <!--************************************** 4th content************************-->
+    <div class="row">
+    <div class="col-6">
+    </div>
+    <div class="col-6">
+    </div>
+    </div>
+    <!--************************************** 5th content************************-->
+    <div class="row">
+    
+    <div class="col-8 p">
+    <img src="image/fifthcontentimage.png" alt="fifthcontentimage" style="width:100%"/>
+    </div>
+    
+    <div class="col-4">
+
+    <div>
+    <h1>Time tested investment methods</h1>
+    <p><strong>Over 30 high quality professionally designed pre-built website concepts to choose from. </strong></p>
+    <img src="image/5thcontenticon1.png" alt="5thcontenticon1"/><a href="#">No Hidden Charges or tricks</a><br /><br />
+    <img src="image/5thcontenticon2.png" alt="5thcontenticon2"/><a href="#">Quick and Safe Transactions</a><br /><br />
+    <img src="image/5thcontenticon3.png" alt="5thcontenticon3"/><a href="#">An award winning company</a><br />
+    </div>
+
+    </div>
+    </div>
+    <!--************************************** 6th content************************-->
+    <div class="row" style="text-align:center;p">
+    
+    <div class="col-6">
+    <h1>We will let our stats do <br /> the talking</h1>
+    </div>
+    
+    <div class="col-3">
+    <p><strong>The best part of being a part of this community is about working together.</strong></p>
+    </div>
+
+    <div class="col-3">
+    <p><strong>The best part of being a part of this community is about working together.</strong></p>
+    </div>
+
+    </div>
+    <!--************************************** 7th content************************-->
+    <div class="row">
+    
+    <div class="col-3">
+
+    <div class="deepakcard1 p">   <!------------- 1st card -------------->
+     <h2>ROI  <a href="#" style="float:right"><img src="image/percenticon.png" alt="percenticon"/></a> </h2>
+     
+    <div class="p">
+    <h1 style="text-align:center">17%</h1>
+    <p style="text-align:center"><strong>Performance over 3 years</strong></p>
+    
+    </div>
+
+    </div>
+    </div>
+
+    <div class="col-3">
+     <div class="deepakcard1 p"  style="background-color:Green"">   <!------------- 2nd card -------------->
+     <h2>Fund Value  <a href="#" style="float:right"><img src="image/dollericon.png" alt="dollericon"/></a> </h2>
+     
+    <div class="p">
+    <h1 style="text-align:center">126 Million</h1>
+    <p style="text-align:center"><strong>Tested on Pingdom.com</strong></p>
+    
+    </div>
+
+    </div>
+    </div>
+    <div class="col-3">
+
+    <div class="deepakcard1 p">   <!------------- 3rd card -------------->
+     <h2>Experience  <a href="#" style="float:right"><img src="image/timericon.png" alt="timericon"/></a> </h2>
+     
+    <div class="p">
+    <h1 style="text-align:center">10 Years</h1>
+    <p style="text-align:center"><strong>of Successful Investing</strong></p>
+    
+    </div>
+
+    </div>
+
+    </div>
+    <div class="col-3">
+
+       <div class="deepakcard1 p">   <!------------- 4rth card -------------->
+     <h2>Clients  <a href="#" style="float:right"><img src="image/clienticon.png" alt="clienticon"/></a> </h2>
+     
+    <div class="p">
+    <h1 style="text-align:center">2476</h1>
+    <p style="text-align:center"><strong>HNI’s from across the world</strong></p>
+    
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+    <!--************************************** 8th content************************-->
+    <div class="row">
+    <div class="col-12 " style="position:relative; width:90%;left:5%;right:5%;">
+    
+     <img src="image/8thcontent.jpg" alt="8thcontentimage" style="width:100%"/>
+    
+
+     <div class="deepakcard1 textabs">   <!-------------name card -------------->
+     <a href="#"><img src="image/doublequote.png" alt="doublequoteimage"/></a><br /><br />
+     
+    <div class="p">
+    <p style="text-align:center"><strong>This is a truly spectacular theme! The custom page builder is definitely one of the most intuitive and user-friendly page builders I’ve ever used.</strong></p>
+    <h4 style="text-align:center" >Jessica Jones</h4>
+    <h5 style="text-align:center">ENTREPRENEUR</h5>
+    </div>
+
+    </div>
+
+
+    </div>
+    
+    </div>
+    <!--************************************** 9th content************************-->
+    <div class="row lightbackground">
+    <div class="col-12">
+    <h1 style="text-align:center">Recent News</h1>
+    <p style="text-align:center">Checkout our recent yet amazing blog and get your<br /> knowledge enlightened</p>
+    </div>
+   
+    </div>
+     <!--************************************** 9th (a) content************************-->
+    <div class="row lightbackground">
+    <div class="col-4">
+
+     <div class="deepakcard p" style="background-color:White;">   <!------------- 9th content first card -------------->
+     
+     <a href="#"><img src="image/9thcontent1stimage.jpg" alt="9thcontent1stimage" style="width:100%"/></a>
+    <div style="text-align:center;">
+    
+<p ><a href="#">News</a>,<a href="#">Tech</a></p> 
+<a href="#"><strong>By 2030, every person in the<br /> planet will have a smartphone </strong></a><br /><br />
+<a href="#"><img src="image/9thcontenticon.png" alt="9thcontenticon"/></a><br /><br />
+
+    </div>
+
+    </div>      
+
+    </div>
+    <div class="col-4">
+
+     <div class="deepakcard p" style="background-color:White;">   <!------------- 9th content 2nd card -------------->
+     
+     <a href="#"><img src="image/9thcontent2ndimage.jpg" alt="9thcontent2ndimage" style="width:100%"/></a>
+    <div style="text-align:center;">
+    
+<p ><a href="#">Lifestyle</a>,<a href="#">Travel</a></p> 
+<a href="#"><strong>Four places you need to visit<br /> if you are nature lover</strong></a><br /><br />
+<a href="#"><img src="image/9thcontenticon.png" alt="9thcontenticon"/></a><br /><br />
+
+    </div>
+
+    </div>      
+
+    </div>
+    <div class="col-4">
+     <div class="deepakcard p" style="background-color:White;">   <!------------- 9th content 3rd card -------------->
+     
+     <a href="#"><img src="image/9thcontent3rdimage.jpg" alt="9thcontent3rdimage" style="width:100%"/></a>
+    <div style="text-align:center;">
+    
+<p ><a href="#">Misc</a>,<a href="#">Tips</a></p> 
+<a href="#"><strong>Why you should hire a lawyer<br /> to prepare you privacy policy</strong></a><br /><br />
+<a href="#"><img src="image/9thcontenticon.png" alt="9thcontenticon"/></a><br /><br />
+
+    </div>
+
+    </div>     
+
+    </div>
+    </div>
+    <!--************************************** 9th (b) content button part************************-->
+    <div class="row lightbackground" style="text-align:center;">
+    <div class="col-12">
+    <input type="button" value="View all article" />
+    </div>
+   
+    </div>
+
+     <!--************************************** 10th content************************-->
+    <div class="row">
+    <div class="col-12 " style="position:relative;">
+    
+     <img src="image/map.png" alt="map" style="width:100%"/>
+    
+
+     <div class="deepakcard1 maptextabs">   <!------------map name card -------------->
+     
+     
+    <div class="p">
+    <p style="text-align:center"><strong>Google</strong></p>
+    <h4 style="text-align:center" >This page can't load Google Maps correctly.</h4>
+    <a href="#">Do you own this website? <input style="float:right;" type="button" value="ok" /></a>
+    </div>
+
+    </div>
+
+
+     <!--************************************** 10th a content************************-->
+    <div class="row">
+    <div class="col-12">
+
+     
+    </div>
+    
+    </div>
+<!--************************************** Footer ************************-->
+    
+    <div class="deepakcard1" >   <!------------form card -------------->
+     
+     
+    <div class="p" style="text-align:center">
+    <h1>Helping people enhance their wealth</h1>
+    <h4 style="text-align:center" >Dont be shy, Just tell us about yourself and we’ll figure out the best investment
+    <br /> option for you and your project. </h4>
+    
+    </div>
+
+    <div style="padding:5px 10px 5px 10px;">         <!-- -------- form-->
+    
+    <form>
+  <div class="row">
+  <div class="col-6">
+  <input type="text"  placeholder="name" >
+  </div>
+  <div class="col-6">
+  <input type="email"  placeholder="email">
+  </div>
+  </div>
+  
+  <div class="row">
+  <div class="col-12">
+  <input type="text"  placeholder="subject">
+  </div>
+  </div>  
+   
+   <div class="row">
+   <div class="col-12">
+   <textarea placeholder="Write something.." style="height:200px;width:100%"></textarea>
+   </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-12">
+    <input type="submit" value="Submit">
+    </div>
+   </div>
+  </form>
+    </div>
+
+    </div>
+    
+    
+    <!--************************************** Footer ************************-->
+    <div class="row" >
+    <div class="col-4">
+    <div style="text-align:center;">
+    <h1>Exponent</h1>
+    <h3>Copyright © 2019 Brand Exponents.<br />
+All Rights Reserved</h3>
+
+    </div>
+
+    </div>
+    <div class="col-2">
+
+    <div style="text-align:center;">
+    <p><strong>Services</strong></p>
+    <p>Consulting</p>
+    <p>Insurance</p>
+    <p>Business Loans</p>
+    <p>Money Markets</p>
+    <p>mutual Funds</p>
+    <p>StockMarket</p>
+    </div>
+
+    </div>
+    <div class="col-2">
+
+     <div class="col-2">
+
+    <div style="text-align:center;">
+    <p><strong>Services</strong></p>
+    <p>Consulting</p>
+    <p>Insurance</p>
+    <p>Business Loans</p>
+    <p>Money Markets</p>
+    <p>mutual Funds</p>
+    <p>StockMarket</p>
+    </div>
+
+    </div>
+
+    </div>
+    <div class="col-4">
+     <div class="col-2">
+
+    <div style="text-align:right;">
+    <p><strong>Services</strong></p>
+    <p>Consulting</p>
+    <p>Insurance</p>
+    <p>Business Loans</p>
+    <p>Money Markets</p>
+    <p>mutual Funds</p>
+    <p>StockMarket</p>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    
+    
+  <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("deepakslides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) { slideIndex = 1 }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 3000);
+      }
+</script>
+   <!--************************************************************************-->
+</body>
+</html>
